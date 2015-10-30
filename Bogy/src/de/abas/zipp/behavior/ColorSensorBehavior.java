@@ -1,6 +1,6 @@
 package de.abas.zipp.behavior;
 
-import lejos.hardware.motor.Motor;
+//import lejos.hardware.motor.Motor;
 import lejos.hardware.port.SensorPort;
 import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.SensorMode;
@@ -23,20 +23,16 @@ public class ColorSensorBehavior implements Behavior {
 		colorMode.fetchSample(sample, 0);
 		System.out.println(sample[0]);
 		
-		if(sample[0] == 0.0){
-			return true;
-		} else {
-			return false;
-		}
+		return sample[0] == 0.0;
 	}
 
 	@Override
 	public void action() {
 		
-		Motor.B.stop();
-		Motor.C.stop();
-		Motor.B.forward();
-		Motor.C.forward();	
+		//Motor.B.stop();
+		//Motor.C.stop();
+		//Motor.B.forward();
+		//Motor.C.forward();	
 	}
 
 	@Override

@@ -9,7 +9,7 @@ import lejos.robotics.subsumption.Behavior;
 public class Main {
 	
 	public static void main(String[] args) {
-	
+		
 		Behavior driveForwardBehavior = new DriveForwardBehavior();
 		Behavior colorSensorBehavior = new ColorSensorBehavior();
 		Behavior searchingBehavior = new SearchingBehavior();

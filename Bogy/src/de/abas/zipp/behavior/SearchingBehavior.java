@@ -13,7 +13,7 @@ public class SearchingBehavior implements Behavior {
 	public boolean takeControl() {
 		
 		
-		SensorMode colorMode = de.abas.zipp.behavior.ColorSensorBehavior.colorSensor.getColorIDMode();
+		SensorMode colorMode = de.abas.zipp.behavior.ColorSensorBehavior.colorSensor.getRGBMode();
 		float sample[] = new float[de.abas.zipp.behavior.ColorSensorBehavior.colorSensor.sampleSize()];
 		colorMode.fetchSample(sample, 0);
 		
